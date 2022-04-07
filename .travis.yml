@@ -12,7 +12,7 @@ after_success:
   - docker build -t darkoohrid/multi-client ./client
   - docker build -t darkoohrid/multi-nginx ./nginx
   - docker build -t darkoohrid/multi-server ./server
-  - docker build -t darkoohrid/multi-server ./worker
+  - docker build -t darkoohrid/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
